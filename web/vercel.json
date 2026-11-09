@@ -1,9 +1,5 @@
 {
-  "schedules": {
-    "sync": {
-      "schedule": "0 * * * *",
-      "path": "/api/cron/sync",
-      "requestMethod": "GET"
-    }
-  }
+  "crons": [
+    { "path": "/api/cron/sync", "schedule": "0 8 * * *" }
+  ]
 }
