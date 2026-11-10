@@ -1,5 +1,11 @@
 {
-  "crons": [
-    { "path": "/api/cron/sync", "schedule": "0 8 * * *" }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "schedules": {
+    "sync": {
+      "schedule": "0 22 * * *",
+      "timezone": "Europe/Madrid",
+      "path": "/api/cron/sync",
+      "requestMethod": "GET"
+    }
+  }
 }
